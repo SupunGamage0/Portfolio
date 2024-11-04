@@ -21,5 +21,132 @@
         </nav>
     </header>
 
-    
+     <!-- Blog Section -->
+     <main>
+        <section class="blog-section" id="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card" id="post1">
+                        <div class="blog-metadata">
+                            <time class="blog-date" datetime="2024-03-15">March 15, 2024</time>
+                            <span class="blog-category">Web Development</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Introduction to HTML and CSS</h3>
+                            <p>When it comes to building websites, HTML and CSS are where it all begins. They’re the foundation for everything you see on the web. So, if you’re new to this, let’s dive into what HTML and CSS do, why they're essential, and how they work together to make your site look awesome.</p>
+                            
+                            <h4>HTML: The Structure</h4>
+                            <p>HTML (HyperText Markup Language) is basically the structure of a webpage. It’s the language that lets you add things like headings, paragraphs, links, and images to a site. Think of it as the bones of your website.</p>
+                            
+                            <h4>Main Parts of HTML</h4>
+                            <ul>
+                                <li><strong>Tags:</strong> HTML is all about tags. Most tags have an opening and a closing, like <code>&lt;p&gt;Text here&lt;/p&gt;</code> for a paragraph. Some tags are self-closing, like <code>&lt;img src="image.jpg" alt="description"&gt;</code> for an image.</li>
+                                <li><strong>Attributes:</strong> Tags can also have extra info, called attributes. For example, the <code>&lt;a&gt;</code> tag has an <code>href</code> attribute to tell the browser where to go: <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code>.</li>
+                                <li><strong>Elements:</strong> An element is a combo of a start tag, content, and an end tag, like <code>&lt;h1&gt;This is a header&lt;/h1&gt;</code>.</li>
+                            </ul>
+
+                            <h4>HTML Versions Over Time</h4>
+                            <ul>
+                                <li><strong>HTML 1.0:</strong> The first version from 1993, with basic web functionality.</li>
+                                <li><strong>HTML 2.0:</strong> Released in 1995, added forms and images.</li>
+                                <li><strong>HTML 3.2:</strong> Came out in '97 with support for tables.</li>
+                                <li><strong>HTML 4.01:</strong> Launched in '99 with better multimedia and scripting options.</li>
+                                <li><strong>HTML5:</strong> The latest and greatest. HTML5 brought cool stuff like <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags, plus APIs for things like geolocation.</li>
+                            </ul>
+
+                            <h4>CSS: The Style</h4>
+                            <p>While HTML is about structure, CSS (Cascading Style Sheets) is all about style. CSS controls how your site looks – colors, fonts, layout – basically, it’s the design layer on top of HTML. It’s what makes your website look good.</p>
+
+                            <h4>Main Parts of CSS</h4>
+                            <ul>
+                                <li><strong>Selectors:</strong> CSS uses selectors to target HTML elements. For instance, <code>p { color: blue; }</code> changes all paragraphs to blue.</li>
+                                <li><strong>Properties and Values:</strong> Every CSS rule has a property and value, like <code>color: blue;</code>.</li>
+                                <li><strong>Classes and IDs:</strong> Classes (prefixed with <code>.</code>) and IDs (with <code>#</code>) let you apply styles to specific elements. For example:
+                                    <ul>
+                                        <li><strong>Class:</strong> <code>.highlight { color: red; }</code></li>
+                                        <li><strong>ID:</strong> <code>#main-header { font-size: 24px; }</code></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h4>Conclusion</h4>
+                            <p>Learning HTML and CSS is a must for anyone looking to dive into web development. They’re the foundation of every website out there, and knowing how they work together can set you on the path to creating stunning web pages!</p>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card" id="post2">
+                        <div class="blog-metadata">
+                            <time class="blog-date" datetime="2024-10-15">October 10, 2024</time>
+                            <span class="blog-category">React</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Mastering React Hooks</h3>
+                            <p>React Hooks changed the game for functional components. With hooks, you can manage state and side effects without writing a class. In this post, we’ll explore what hooks are, how to use them, and why they’re so powerful.</p>
+
+                            <h4>What Are Hooks?</h4>
+                            <p>Hooks are functions that let you “hook into” React state and lifecycle features from function components. The most common hooks are:</p>
+                            <ul>
+                                <li><strong>useState:</strong> Lets you add state to your component.</li>
+                                <li><strong>useEffect:</strong> Lets you perform side effects in function components.</li>
+                            </ul>
+
+                            <h4>Using useState</h4>
+                            <p>To use the <code>useState</code> hook, simply call it at the top of your component. Here’s a basic example:</p>
+                            <code>const [count, setCount] = useState(0);</code>
+                            <p>This creates a state variable <code>count</code> and a function <code>setCount</code> to update it.</p>
+
+                            <h4>Using useEffect</h4>
+                            <p>The <code>useEffect</code> hook is used to manage side effects. It runs after the render, which makes it perfect for data fetching, subscriptions, or manually changing the DOM:</p>
+                            <code>useEffect(() => { /* effect code */ }, [dependencies]);</code>
+
+                            <h4>Conclusion</h4>
+                            <p>Hooks are a powerful addition to React that can help simplify your code and make it more readable.
+                                 Start integrating them into your projects today!</p>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card" id="post3">
+                        <div class="blog-metadata">
+                            <time class="blog-date" datetime="2024-03-05">March 5, 2024</time>
+                            <span class="blog-category">Backend</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Building Scalable Backend Systems</h3>
+                            <p>As your application grows, ensuring your backend can scale with it is crucial.
+                                 This post covers strategies and tools for building scalable backend systems that can handle increasing traffic without a hitch.</p>
+
+                            <h4>Key Strategies for Scalability</h4>
+                            <ul>
+                                <li><strong>Load Balancing:</strong> Distributing network traffic across multiple servers to avoid bottlenecks.</li>
+                                <li><strong>Caching:</strong> Storing frequently accessed data in memory to speed up retrieval.</li>
+                                <li><strong>Microservices:</strong> Breaking down your application into smaller, independent services that can be deployed and scaled individually.</li>
+                            </ul>
+
+                            <h4>Tools and Technologies</h4>
+                            <p>Consider using tools like Kubernetes for container orchestration, Redis for caching, and AWS for cloud infrastructure to make scaling easier.</p>
+
+                            <h4>Conclusion</h4>
+                            <p>Building a scalable backend requires careful planning, but with the right strategies and tools,
+                                 you can create a system that grows effortlessly with your business needs.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Supun Gamage. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
 
