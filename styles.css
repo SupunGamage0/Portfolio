@@ -569,11 +569,10 @@ footer {
     font-size: 1rem; 
 }
 
-/* Responsive Design */
-/* Mobile devices (up to 600px) */
+/* Small devices (phones, 600px and down) */
 @media (max-width: 600px) {
-    .container {
-        padding: 0 0.5rem;
+    .header {
+        display: none; /* Hide header on small screens */
     }
 
     .navbar {
@@ -586,151 +585,82 @@ footer {
         gap: 1rem;
     }
 
-    .section-title {
+    .home_title {
         font-size: 2rem;
     }
 
-    .home-section {
-        padding: 4rem 1rem;
-        text-align: left;
-    }
-
     .about-content {
-        grid-template-columns: 1fr;
-        padding: 2rem 1rem;
+        grid-template-columns: 1fr; /* Stack columns */
     }
 
-    .home_blob {
-        width: 180px;
-        height: 180px;
-    }
-
-    .blog-grid, .contact-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    .btn-submit {
-        width: 100%;
-    }
-
-    /* Responsive Header */
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* Tablet devices (601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        padding: 0 1rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-list {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem;
-    }
-
-    .home_blob {
-        width: 220px;
-        height: 220px;
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills */
     }
 
     .blog-grid {
-        flex-direction: column;
-        padding: 0 1rem;
+        padding: 0 1rem; /* Reduce padding */
     }
 
     .contact-container {
-        max-width: 400px;
+        width: 100%; /* Full width on small screens */
+        max-width: 100%; /* Override max width */
     }
 
-    /* Responsive Header */
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        gap: 1.2rem;
+    .btn-submit {
+        font-size: 1rem; /* Adjust button size */
     }
 }
 
-/* Small desktop devices (901px to 1200px) */
-@media (min-width: 901px) and (max-width: 1200px) {
-    .container {
-        padding: 0 1.5rem;
+/* Medium devices (tablets, 601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        padding: 1rem 4%;
     }
 
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav-list {
-        gap: 1.8rem;
-    }
-
-    .section-title {
-        font-size: 2.4rem;
-    }
-
-    .home_blob {
-        width: 250px;
-        height: 250px;
-    }
-
-    .about-content {
-        padding: 3rem;
-    }
-
-    .blog-grid, .contact-container {
-        padding: 0 1.5rem;
-        width: 90%;
-    }
-
-    /* Responsive Header */
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 30px;
-    }
-
-    header h1 {
+    .home_title {
         font-size: 2.2rem;
     }
 
-    nav ul {
-        gap: 1.5rem;
+    .about-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for skills */
+    }
+
+    .blog-grid {
+        padding: 0 2rem; /* Moderate padding */
+    }
+
+    .contact-container {
+        max-width: 100%; /* Full width for better visibility */
+    }
+}
+
+/* Large devices (desktops, 901px and up) */
+@media (min-width: 901px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .home_title {
+        font-size: 2.5rem; /* Keep large font size */
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for skills */
+    }
+
+    .blog-grid {
+        padding: 0 2rem; /* Standard padding for blog */
+    }
+
+    .contact-container {
+        max-width: 500px; /* Restrict max width */
     }
 }
