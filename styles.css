@@ -446,6 +446,110 @@ section {
     color: #003366; 
 }
 
+/* Contact Section Styles */
+.contact-section {
+    background-color: #ffffff; 
+    padding: 40px 30px; 
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+.section-description {
+    margin-bottom: 20px; 
+    color: #666; 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+/* Form Styles */
+.contact-container {
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+/* 5. Attribute Selectors */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+label {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+/* 13. Relational Selector */
+label + input {
+    margin-top: 0.5rem;
+}
+
+.form-control {
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    transition: border-color 0.3s; 
+    width: 100%;
+}
+
+/* 12. Validity Pseudo Class */
+.form-control:valid {
+    border-color: #4CAF50;
+}
+
+/* 10. Negation Pseudo Class */
+.form-control:not(:focus) {
+    border-color: var(--border-color);
+    outline: none; 
+}
+
+.checkbox-group {
+    display: flex; 
+    align-items: center; 
+}
+
+.checkbox-group input {
+    margin-right: 10px; 
+}
+
+.btn-submit {
+    padding: 10px; 
+    background-color: var(--primary-color); 
+    color: white; 
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    width: 100%; 
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color); 
+    transform: translateY(-2px); 
+}
 
 @media screen and (max-width: 768px){
     .navbar{
