@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap');
-/*1. Font Specifications-Google Fonts import*/
+/* 1. Font Specifications - Google Fonts import */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --primary-color:#3669b6;
-    --secondary-color:#4d9de8;
-    --background-color:#f8f9fa;
+    --primary-color: #3669b6;
+    --secondary-color: #4d9de8;
+    --background-color: #f8f9fa;
     --text-color: #323131;
     --footer-color: rgba(16, 59, 90, 0.85); /* Semi-transparent color */
     --white: #ffffff;
@@ -34,7 +34,7 @@ body, html {
 
 .header {
     background-color: var(--white);
-    box-shadow: var(--shadow); /* 3. Shadows applied here */
+    box-shadow: var(--shadow);/* 3. Shadows applied here */
     padding: 1rem 5%;
     position: fixed;
     width: 100%;
@@ -569,121 +569,23 @@ footer {
     font-size: 1rem; 
 }
 
-/* Mobile devices (up to 600px) */
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 1200px) {
     .container {
-        padding: 0 0.5rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .home-section {
-        padding: 4rem 1rem;
-        text-align: left;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-        padding: 2rem 1rem;
-    }
-
-    .home_blob {
-        width: 180px;
-        height: 180px;
-    }
-
-    .blog-grid, .contact-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    .btn-submit {
-        width: 100%;
+        padding: 20px; 
     }
 }
 
-/* Tablet devices (601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        padding: 0 1rem;
+@media (max-width: 768px) {
+    .blog-card {
+        flex: 1 1 100%; /
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+    .contact-section {
+        padding: 20px; 
     }
 
-    .nav-list {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem;
-    }
-
-    .home_blob {
-        width: 220px;
-        height: 220px;
-    }
-
-    .blog-grid {
-        flex-direction: column;
-        padding: 0 1rem;
-    }
-
-    .contact-container {
-        max-width: 400px;
-    }
-}
-
-/* Small desktop devices (901px to 1200px) */
-@media (min-width: 901px) and (max-width: 1200px) {
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav-list {
-        gap: 1.8rem;
-    }
-
-    .section-title {
-        font-size: 2.4rem;
-    }
-
-    .home_blob {
-        width: 250px;
-        height: 250px;
-    }
-
-    .about-content {
-        padding: 3rem;
-    }
-
-    .blog-grid, .contact-container {
-        padding: 0 1.5rem;
-        width: 90%;
+    .footer-content {
+        padding: 10px; 
     }
 }
